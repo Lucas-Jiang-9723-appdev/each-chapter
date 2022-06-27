@@ -4,3 +4,9 @@
 # 
 
 p "Enter a list of words separated by spaces:"
+list = gets.chomp.split
+list.each do |elm|
+  if elm.length.even? == true
+    p elm
+  end
+end
